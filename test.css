@@ -1,0 +1,16 @@
+body{
+    background-image: url('images/bg-tile-sea-50procent.jpg');
+    background-image: url('images/bg-tile-sea.jpg'); 
+    /* specificity: indien alles gelijkwaardig; laatste wordt gekozen  */
+    background-image: url('images/bg-tile-fox.jpg');
+    /* works in all browsers: adapt all fonts relative to this default font-size in percent on body:  */
+    font-size: 100%;
+
+}
+
+h1{
+    font-family: monospace;
+    font-size: 5em;
+    color: rgb(134, 69, 9);
+
+}
