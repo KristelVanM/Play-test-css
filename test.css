@@ -1,16 +1,50 @@
+/*
 body{
     background-image: url('images/bg-tile-sea-50procent.jpg');
-    background-image: url('images/bg-tile-sea.jpg'); 
+    background-image: url('images/bg-tile-sea.jpg'); */
     /* specificity: indien alles gelijkwaardig; laatste wordt gekozen  */
-    background-image: url('images/bg-tile-fox.jpg');
+   /* background-image: url('images/bg-tile-fox.jpg'); */
     /* works in all browsers: adapt all fonts relative to this default font-size in percent on body:  */
-    font-size: 100%;
+ /*   font-size: 100%;
 
-}
+}*/
+
+/* om cards te maken:*/
+* {
+    box-sizing: border-box;
+  }
 
 h1{
     font-family: monospace;
     font-size: 5em;
     color: rgb(134, 69, 9);
-
+    text-align: center;
+    margin: 1.5em;
 }
+
+
+html { 
+    background: url('images/bg-flower-light.jpg') no-repeat center center ; /* fixed of niet-fixed: bg scrollt mee of niet, door center verandert plaatsing vd foto */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .row{
+
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  .card {
+      font-family: monospace;
+      background-color: rgb(241, 114, 68, 0.5);
+      margin-left: 5em;
+      margin-right: 5em;
+      padding: 2em;
+  }
