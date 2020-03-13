@@ -42,7 +42,7 @@ var newNumber = last + preLast;
 
 fibonacciGenerator (5); 
 
-😁
+//😁
 
 // ARRAY TEST
 var test = [1, 2, 3, 4, 5];

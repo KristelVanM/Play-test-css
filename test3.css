@@ -1,0 +1,168 @@
+
+body {
+    background-color: steelblue;
+    margin: 0;
+}
+/* OEFENING 1 -------------positiebepaling met margins*/
+.box {
+    height: 200px;
+    width: 200px;
+    background: mediumslateblue;
+    
+}
+
+.box1 {  /*border-width en border-color werken niet als je er geen border-style aan toevoegt!!!!!!!!!!!!!!!!!!!!!
+    ----------OF: border shorthand: "border:solid 10px" bvb------------*/
+    border-color: black;
+    border-style: solid dotted;
+    border-width: 0px 10px 20px 30px;  /*GEEN KOMMA'S---------------*/
+    padding: 20px ;
+}
+
+p {
+    /*width: 860px; */
+    padding: 20px 20px; 
+    color: tan;
+}
+.box2 {
+    border-color: grey;
+    border-style: solid dashed;
+    border-width: 10px 20px;
+    margin-left: 280px;
+}
+
+.box3 {
+    margin-left: 520px;
+    margin-bottom: 50px;
+}
+
+/* OEFENING 2 ------DISPLAY  & POSITION RELATIVE*/
+/* verander red-blue-yellow naar blue-yellow-red*/
+.boxB/* OEFENING 2 */ {
+    height: 100px;
+    width: 100px;
+}
+
+.box4 {
+    background-color: red;
+    /* oplossing kan ook door alledrie de elementen "display: inline-block" mee te geven; dan moeten blauw en geel position "right" hebben*/
+    position: relative;
+   left: 200px; 
+}
+
+.box5 {
+    background-color: blue;
+    position: relative;
+    top: -100px;
+
+}
+
+.box6 {
+    background-color: yellow;
+    position: relative;
+    left: 100px;
+    top: -200px;
+}
+
+/* zelfde als vorige oef, andere oplossing--------------- browser voegt kleine default marge toe ----*/
+/* VERGELIJK CIJFERS-------------MERK AFSTAND TUSSEN TWEE RIJEN, 'ghosts' van oorspronkelijke plaats*/
+.box7 {
+    background-color: red;
+    display: inline-block;
+    position: relative;
+    left: 200px;
+}
+
+.box8 {
+    background-color: blue;
+    display: inline-block;
+    position: relative;
+    right: 100px; 
+}
+.box9 {
+    background-color: yellow;
+    display: inline-block;
+    position: relative;
+    right: 100px; 
+}
+
+/* OEFENING 3 ------------POSITION ABSOLUTE*/
+/* ik kan dit hier niet "pixel perfext" doen want 'inspect' toont iets anders dan browser????????????????????????*/
+.boxC {
+    width: 100px;
+    height: 100px;
+}
+
+.box10 {
+    background-color: tomato;
+    /* position: absolute; */
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1423.6px;
+}
+.box11 {
+    background-color: rgb(71, 212, 255);
+    /* position: absolute; */
+    grid-column-start: 2;
+    grid-row-start: 2;
+    left: 100px;
+    top: 1323.6px;
+}
+.box12 {
+    background-color: rgb(255, 227, 71);
+    grid-column-start: 3;
+    grid-row-start: 3;
+    /* position: absolute; */
+    /*transform: rotate(20deg);*/
+}
+
+.container {
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    width: 300px;
+    height: 300px;
+
+}
+
+/* hetzelfde, maar "pixel perfext" ten opzichte van bovenkant browser/body*/
+.box13 {
+    background-color: tomato;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+.box14 {
+    background-color: rgb(71, 212, 255);
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+.box15 {
+    background-color: rgb(255, 227, 71);
+    position: absolute;
+}
+
+/* box met foto animatie: */
+.box16 {
+    position: relative;
+    top: 400px; 
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    /* + delay, iteration, alternate (1 keer voorwaarts, 1 keer achterwaarts), speed curve, fill mode (hoe ziet het eruit als het stilstaat) */
+  }
+
+@keyframes example {
+    0%   {background-image: url("images/bg-tile-sea-50procent.jpg");}
+    25%  {background-image:url("images/bg-tile-tattoo.jpg") ;}
+    50%  {background-image: url("images/bg-tile-xmas.jpg")  ;}
+    100% {background-image: url("images/wolf1920.jpg")  ;}
+  }
